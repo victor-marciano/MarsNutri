@@ -1,0 +1,42 @@
+// APP THEME
+$marsNutriTheme: #70D34A;
+
+$theme-colors: (
+    "theme":  $marsNutriTheme
+);
+
+$input-md-focus-color: $marsNutriTheme;
+
+$link-color:                              $marsNutriTheme;
+$link-decoration:                         none;
+$link-hover-color:                        darken($link-color, 15%);
+$link-hover-decoration:                   underline;
+
+$input-label-color: #fff;
+
+$input-color: #adb5bd;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/mdbootstrap/scss/mdb-free";
+@import "auth/authStyle";
+@import "node_modules/alertifyjs/build/css/alertify";
+@import "node_modules/alertifyjs/build/css/themes/bootstrap";
+
+// Custom alertify error box
+.alertify-notifier .ajs-message.ajs-error {         
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5) !important;   
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    border:none;
+} 
+
+// Custom alertify success box
+.ajs-success {
+    color: #000 !important;    
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5) !important;    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    border:none !important;
+} 

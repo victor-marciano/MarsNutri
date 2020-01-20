@@ -1,0 +1,28 @@
+// nav pills
+$nav-pills-link-active-color: #70D34A;
+$nav-pills-link-active-bg: #3e3e3e;
+$nav-pills-border-radius: 30px;
+
+.nav-pills {
+    .nav-link {
+        color: $nav-pills-link-active-color;
+    }
+    
+    .nav-link:hover {
+        color: darken($nav-pills-link-active-color, 15%);
+    }
+}
+
+// manual avatar
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.75);
+}
+
+// bootstrap
+@import "~bootstrap";

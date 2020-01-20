@@ -1,0 +1,69 @@
+
+$theme-color: #70D34A;
+$theme-dark-color: #3e3e3e;
+$border-radius-theme: 30px;
+$primary-color: $theme-color;
+$font-dashboard: Open Sans, sans-serif;
+
+.bg-theme {
+    background-color: $theme-color;
+}
+
+.bg-theme-dark {
+    background-color: $theme-dark-color;
+}
+
+@import "../now-ui-dashboard-master/assets/scss/now-ui-dashboard";
+// @import "../../node_modules/mdbootstrap/scss/core/colors";
+// @import "../../node_modules/mdbootstrap/scss/core/variables";
+// @import "../../node_modules/mdbootstrap/scss/core/mixins";
+// @import "../../node_modules/mdbootstrap/scss/free/buttons";
+
+.dropdown-menu {
+    border-radius: $border-radius-theme;
+    
+    .dropdown-item {        
+        border-radius: inherit;
+    }
+}
+
+.sidebar {
+    font-weight: 700;
+}
+
+.form-control {
+    font-family: $font-dashboard;
+}
+
+.btn {
+    font-family: $font-dashboard;
+    border-radius: 30px;
+}
+
+.avatar-name {
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    border: 1px #000000;
+}
+
+
+.feather-menu-button {
+    float: left;
+    margin-right: 10px;
+}
+
+.feather-nav-button {
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.75);
+}       
+
+html
+body {                       
+    font-family: Open Sans, sans-serif;
+    font-weight: 500;
+}
+
+

@@ -1,0 +1,88 @@
+
+// Busca todos os alimentos
+GET http://127.0.0.1:8000/api/alimento HTTP/1.1
+
+###
+// Busca o alimento através do seu id
+GET http://127.0.0.1:8000/api/alimento/3 HTTP/1.1
+
+###
+// Busca o alimento através do seu id
+GET http://127.0.0.1:8000/api/dieta/ HTTP/1.1
+
+###
+// Busca o alimento através do seu id
+GET http://127.0.0.1:8000/api/dieta/1 HTTP/1.1
+
+###
+// Busca o alimento através do seu id
+GET http://127.0.0.1:8000/api/dieta/user/5 HTTP/1.1
+
+###
+POST http://127.0.0.1:8000/api/dieta/ HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Dieta do marcika",
+    "objetivo": 3,
+    "user_id": 1
+}
+
+###
+PUT http://127.0.0.1:8000/api/dieta/51 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Dieta do marcikaaaaaaa",
+    "objetivo": 2,
+    "user_id": 1
+}
+
+###
+GET http://127.0.0.1:8000/api/dieta/12/alimento HTTP/1.1
+
+###
+GET http://127.0.0.1:8000/api/pdf/2 HTTP/1.1
+
+###
+// Registro de usuários
+POST http://127.0.0.1:8000/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Victor Marciano",
+    "email": "vpm.marciano@gmail.com",
+    "password": "123456789"
+}
+
+###
+// Autenticação de usuários
+POST http://127.0.0.1:8000/login HTTP/1.1
+# Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
+
+email=vpm.marciano@gmail.com
+&password=123456789
+# {    
+#     "email": "vpm.marciano@gmail.com",
+#     "password": "123456789"
+# }
+
+###
+// Autenticação de usuários
+POST http://127.0.0.1:8000/api/login HTTP/1.1
+# Content-Type: application/json
+Content-Type: multipart/form-data
+
+{    
+    "email": "vpm.marciano@gmail.com",
+    "password": "123456789"
+}
+
+###
+// Obtem usuário logado
+GET http://127.0.0.1:8000/api/auth/user HTTP/1.1
+
+###
+// Obtem usuário logado
+GET http://127.0.0.1:8000/api/logout HTTP/1.1
