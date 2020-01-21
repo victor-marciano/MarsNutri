@@ -14,10 +14,6 @@ $font-dashboard: Open Sans, sans-serif;
 }
 
 @import "../now-ui-dashboard-master/assets/scss/now-ui-dashboard";
-// @import "../../node_modules/mdbootstrap/scss/core/colors";
-// @import "../../node_modules/mdbootstrap/scss/core/variables";
-// @import "../../node_modules/mdbootstrap/scss/core/mixins";
-// @import "../../node_modules/mdbootstrap/scss/free/buttons";
 
 .dropdown-menu {
     border-radius: $border-radius-theme;
@@ -64,6 +60,10 @@ html
 body {                       
     font-family: Open Sans, sans-serif;
     font-weight: 500;
+}
+
+#formSearch {
+    width: 300px;
 }
 
 

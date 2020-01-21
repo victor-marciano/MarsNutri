@@ -31,3 +31,9 @@ Route::apiResource('dieta', 'DietaController');
 Route::get('dieta/user/{user}', 'UserController@getDietas');
 Route::get('dieta/{dietum}/alimento', 'DietaController@getAlimentos');
 Route::get('pdf/{id}', 'DietaController@pdf');
+
+Route::post('mail/contact', 'MailController@contact');
+
+Route::get('mailable', function () {
+    return new App\Mail\ContactMail();
+});

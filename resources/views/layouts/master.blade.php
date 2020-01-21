@@ -34,6 +34,6 @@
         feather.replace({
             "stroke-width": 3                       
         });
-    </script>             
+    </script>                
 </body>
 </html>

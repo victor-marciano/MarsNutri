@@ -5769,3 +5769,7 @@ html body {
   font-weight: 500;
 }
 
+#formSearch {
+  width: 300px;
+}
+

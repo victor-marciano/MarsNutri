@@ -19,10 +19,12 @@ mix.js('resources/js/auth.js', 'public/js')
     .sass('resources/sass/auth.scss', 'public/css/auth');
 
 mix.sass('resources/sass/dashboard.scss', 'public/css/dashboard');
+
+mix.sass('resources/sass/mail/mail.scss', 'public/css/mail');
+
 mix.scripts(
-    [
-        // 'resources/now-ui-dashboard-master/assets/js/plugins/perfect-scrollbar.jquery.min.js',        
-        'resources/now-ui-dashboard-master/assets/js/now-ui-dashboard.js'        
+    [                
+        'resources/now-ui-dashboard-master/assets/js/now-ui-dashboard.js'                
     ],
     'public/js/dashboard/dashboard.js'
 )

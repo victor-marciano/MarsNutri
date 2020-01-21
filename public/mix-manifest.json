@@ -3,6 +3,7 @@
     "/css/app.css": "/css/app.css",
     "/css/auth/auth.css": "/css/auth/auth.css",
     "/css/dashboard/dashboard.css": "/css/dashboard/dashboard.css",
+    "/css/mail/mail.css": "/css/mail/mail.css",
     "/js/auth.js": "/js/auth.js",
     "/js/dashboard/dashboard.js": "/js/dashboard/dashboard.js",
     "/js/mdb.js": "/js/mdb.js",

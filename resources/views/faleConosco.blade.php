@@ -13,12 +13,12 @@
              <p>Possui alguma dúvida ? alguma reclamação ou sugestão ? Entre em contato conosco enviando uma mensagem, daremos o retorno o mais rápido possível.</p>
              <p>A mensagem será enviada para o nosso time de suporte, e será respondida no e-mail que você informar abaixo.</p>
              <h4>Formulário</h4>
-             <form>
+             <form name="formContact">
                 <div class="row">
                     <div class="col-md-10 pr-1">
                         <div class="form-group">
                             <label>Nome completo</label>
-                            <input type="text" class="form-control" placeholder="Seu nome">
+                            <input name="nome" type="text" class="form-control" placeholder="Seu nome">
                         </div>                            
                     </div>                   
                 </div>
@@ -26,7 +26,7 @@
                     <div class="col-md-10 pr-1">
                         <div class="form-group">
                             <label>E-mail</label>
-                            <input type="text" class="form-control" placeholder="Seu e-mail" >
+                            <input name="email" type="text" class="form-control" placeholder="Seu e-mail" >
                         </div>
                     </div>                   
                 </div>                
@@ -34,7 +34,7 @@
                     <div class="col-md-10 pr-1">
                         <div class="form-group">
                             <label>Assunto</label>
-                            <input type="text" class="form-control" placeholder="Qual o assunto?" >
+                            <input name="assunto" type="text" class="form-control" placeholder="Qual o assunto?" >
                         </div>
                     </div>                   
                 </div>                
@@ -42,13 +42,13 @@
                     <div class="col-md-10">
                         <div class="form-group">
                             <label>Mensagem</label>
-                            <textarea rows="4" cols="80" class="form-control" placeholder="Digite aqui sua mensagem" value="Mike"></textarea>
+                            <textarea rows="4" cols="80" class="form-control" placeholder="Digite aqui sua mensagem" name="mensagem"></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button id="buttonContact" class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>

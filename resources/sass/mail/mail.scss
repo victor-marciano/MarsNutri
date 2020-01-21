@@ -1,0 +1,25 @@
+$theme-color: #70D34A;
+$theme-dark-color: #3e3e3e;
+$border-radius-theme: 30px;
+
+$theme-colors: (
+    "theme":  $theme-color
+);
+
+$link-color:                              $theme-color;
+$link-decoration:                         none;
+$link-hover-color:                        darken($theme-color, 15%);
+$link-hover-decoration:                   underline;
+
+@import "~bootstrap";
+
+body {
+    font-family: Open Sans, sans-serif;
+    font-weight: 500;
+}
+
+.btn {
+    border-radius: $border-radius-theme;
+}
+
+

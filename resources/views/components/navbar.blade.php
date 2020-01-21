@@ -7,9 +7,9 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">                
-      <form class="form-inline mr-auto">
+      <form id="formSearch" class="form-inline mr-auto">
           <div class="form-group no-border">
-            <input type="text" class="form-control" placeholder="Buscar no site">
+            <input size="34" type="text" class="form-control" placeholder="Buscar no site">
           </div>      
           <button type="submit" class="btn btn-neutral btn-icon btn-round feather-nav-button">              
               <i data-feather="search" color="green"></i>
